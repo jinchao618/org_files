@@ -2922,17 +2922,17 @@ dl {
     margin: 0 auto;
 }
 
-ul,ol,dl{
-    line-height:24px;
-    list-style-image:none;
-    /* list-style:none; */
-    /* margin:0px 0px 24px 0px; */
-    padding:0;
-}
+/* ul,ol,dl{ */
+/*     line-height:24px; */
+/*     list-style-image:none; */
+/*     /\* list-style:none; *\/ */
+/*     /\* margin:0px 0px 24px 0px; *\/ */
+/*     padding:0; */
+/* } */
 
-li{
-    margin-left: 24px;
-}
+/* li{ */
+/*     margin-left: 24px; */
+/* } */
 
 .title {
     text-align: center;
@@ -3173,9 +3173,15 @@ kbd {
 /* #table-of-contents li { */
 /*     clear: both; */
 /* } */
+
 #table-of-contents li{
     list-style:none;
     margin-left: 0px;
+}
+#table-of-contents ul{
+    list-style:none;
+    margin-left: 0px;
+    padding:0;
 }
 
 #table-of-contents header{
