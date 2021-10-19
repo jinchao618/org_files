@@ -24,9 +24,9 @@
 #+LATEX_HEADER: \usepackage{xcolor}
 #+LATEX_HEADER: \usepackage{minted}
 #+LATEX_HEADER: \usepackage{relsize}
-#+LATEX_HEADER: \usepackage{svg}
-#+LATEX_HEADER: \usepackage[off]{svg-extract}
-#+LATEX_HEADER: \svgsetup{clean=true}
+# #+LATEX_HEADER: \usepackage{svg}
+# #+LATEX_HEADER: \usepackage[off]{svg-extract}
+# #+LATEX_HEADER: \svgsetup{clean=true}
 #+LATEX_HEADER: \hypersetup{hidelinks}
 #+LATEX_HEADER: \renewcommand{\familydefault}{\sfdefault}
 #+LATEX_HEADER: \linespread{1.2}
