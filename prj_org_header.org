@@ -1,10 +1,9 @@
-# copy this file under root folder of org project
-#+INCLUDE: ./org_files/org_header.org
+#+INCLUDE: ./org_header.org
 
 #+NAME: prj-header-run
-#+begin_src emacs-lisp :var filename="default" :exports results :results raw
+#+begin_src emacs-lisp :var filename="default" :exports none :results raw
   (setq filepath (f-dirname filename))
-  (concat "#+HTML_HEAD: <link rel=\"stylesheet\" type=\"text/css\" href=\"" filepath "org_files/css/org_toc_side.css\" />")
+  (concat "#+HTML_HEAD: <link rel=\"stylesheet\" type=\"text/css\" href=\"" filepath "css/org_toc_side.css\" />")
 #+end_src
 
 #+OPTIONS: num:9
