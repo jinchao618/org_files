@@ -37,22 +37,23 @@
 #+LATEX: \setcounter{secnumdepth}{5}
 
 #+LATEX_HEADER: \usepackage{enumitem}
-#+LATEX_HEADER: \newlist{longenum}{enumerate}{5}
-#+LATEX_HEADER: \setlist[longenum,1]{label=\roman*)}
-#+LATEX_HEADER: \setlist[longenum,2]{label=\alph*)}
-#+LATEX_HEADER: \setlist[longenum,3]{label=\arabic*)}
-#+LATEX_HEADER: \setlist[longenum,4]{label=(\roman*)}
-#+LATEX_HEADER: \setlist[longenum,5]{label=(\alph*)}
+# #+LATEX_HEADER: \newlist{longenum}{enumerate}{5}
+# #+LATEX_HEADER: \setlist[longenum,1]{label=\roman*)}
+# #+LATEX_HEADER: \setlist[longenum,2]{label=\alph*)}
+# #+LATEX_HEADER: \setlist[longenum,3]{label=\arabic*)}
+# #+LATEX_HEADER: \setlist[longenum,4]{label=(\roman*)}
+# #+LATEX_HEADER: \setlist[longenum,5]{label=(\alph*)}
 #+LATEX_HEADER: \setlistdepth{9}
-#+LATEX_HEADER: \setlist[itemize,1]{label=\tiny$\blacksquare$}
-#+LATEX_HEADER: \setlist[itemize,2]{label=$-$}
-#+LATEX_HEADER: \setlist[itemize,3]{label=$-$}
-#+LATEX_HEADER: \setlist[itemize,4]{label=$-$}
-#+LATEX_HEADER: \setlist[itemize,5]{label=$-$}
-#+LATEX_HEADER: \setlist[itemize,6]{label=$-$}
-#+LATEX_HEADER: \setlist[itemize,7]{label=$-$}
-#+LATEX_HEADER: \setlist[itemize,8]{label=$-$}
-#+LATEX_HEADER: \setlist[itemize,9]{label=$-$}
+# # #+LATEX_HEADER: \setlist[itemize,1]{label=\tiny$\blacksquare$}
+#+LATEX_HEADER: \setlist[itemize,1]{label=$\bullet$}
+#+LATEX_HEADER: \setlist[itemize,2]{label=$\circ$}
+#+LATEX_HEADER: \setlist[itemize,3]{label=\tiny$\blacksquare$}
+#+LATEX_HEADER: \setlist[itemize,4]{label=$\bullet$}
+#+LATEX_HEADER: \setlist[itemize,5]{label=$\circ$}
+#+LATEX_HEADER: \setlist[itemize,6]{label=\tiny$\blacksquare$}
+#+LATEX_HEADER: \setlist[itemize,7]{label=$\bullet$}
+#+LATEX_HEADER: \setlist[itemize,8]{label=$\circ$}
+#+LATEX_HEADER: \setlist[itemize,9]{label=\tiny$\blacksquare$}
 #+LATEX_HEADER: \renewlist{itemize}{itemize}{9}
 
 #+LATEX_HEADER: \titleformat{\paragraph}{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
