@@ -45,6 +45,8 @@
 # #+LATEX_HEADER: \setlist[longenum,5]{label=(\alph*)}
 #+LATEX_HEADER: \setlistdepth{9}
 # # #+LATEX_HEADER: \setlist[itemize,1]{label=\tiny$\blacksquare$}
+#+LATEX_HEADER: \setlist{leftmargin=*}
+# #+LATEX_HEADER: \setlist{labelindent=\parindent}
 #+LATEX_HEADER: \setlist[itemize,1]{label=$\bullet$}
 #+LATEX_HEADER: \setlist[itemize,2]{label=$\circ$}
 #+LATEX_HEADER: \setlist[itemize,3]{label=\tiny$\blacksquare$}
