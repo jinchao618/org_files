@@ -3,6 +3,7 @@
 #+HTML_MATHJAX: cancel.js noErrors.js
 #+HTML_HEAD_EXTRA: <style> .figure p {text-align: left;}</style>
 #+MACRO: color @@html:<span style="color: $1">$2</span>@@@@latex:\textcolor{$1}{$2}@@@@odt:<text:span text:style-name=“$1”>$2</text:span>@@
+#+MACRO: bgcolor @@html:<span style="background-color: $1;">$2</span>@@@@latex:\sethlcolor{$1}\hl{$2}@@
 #+MACRO: if-latex-else (eval (if (org-export-derived-backend-p org-export-current-backend 'latex) "$1" "$2"))
 
 #+NAME: get-filename-by-backend
@@ -21,7 +22,8 @@
 #+LATEX_CLASS_OPTIONS: [letterpaper, 11pt, fleqn]
 #+LATEX_HEADER: \usepackage{amsmath,amssymb,amsthm,mathrsfs,textcomp,mathtools}
 #+LATEX_HEADER: \usepackage{titlesec}
-#+LATEX_HEADER: \usepackage{xcolor}
+#+LATEX_HEADER: \usepackage[dvipsnames]{xcolor}
+#+LATEX_HEADER: \usepackage{soul}
 #+LATEX_HEADER: \usepackage{minted}
 #+LATEX_HEADER: \usepackage{relsize}
 # #+LATEX_HEADER: \usepackage{svg}
