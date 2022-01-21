@@ -5,6 +5,8 @@
 #+MACRO: color @@html:<span style="color: $1">$2</span>@@@@latex:\textcolor{$1}{$2}@@@@odt:<text:span text:style-name=“$1”>$2</text:span>@@
 #+MACRO: bgcolor @@html:<span style="background-color: $1;">$2</span>@@@@latex:\sethlcolor{$1}\hl{$2}@@
 #+MACRO: if-latex-else (eval (if (org-export-derived-backend-p org-export-current-backend 'latex) "$1" "$2"))
+#+HTML_MATHJAX: path:"https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+#+HTML_HEAD: <script> window.MathJax = {loader: {load: ['[tex]/mathtools']}, tex: {packages: {'[+]': ['mathtools']}}}; </script>
 
 #+NAME: get-filename-by-backend
 #+begin_src emacs-lisp :var filename="default" :exports none :results raw

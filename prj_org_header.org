@@ -4,6 +4,10 @@
 #+begin_src emacs-lisp :var filename="default" :exports none :results raw
   (setq filepath (f-dirname filename))
   (concat "#+HTML_HEAD: <link rel=\"stylesheet\" type=\"text/css\" href=\"" filepath "css/org_toc_side.css\" />")
+
+  ;; use local MathJax
+  ;; (concat "#+HTML_HEAD: <link rel=\"stylesheet\" type=\"text/css\" href=\"" filepath "css/org_toc_side.css\" />"
+  ;;         "\n" "#+HTML_MATHJAX: path:\"" filepath "MathJax-master/es5/tex-mml-chtml.js\"")
 #+end_src
 
 #+OPTIONS: num:9
