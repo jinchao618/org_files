@@ -1,4 +1,4 @@
-#+OPTIONS: H:9 num:nil @:t toc:t _:nil ^:nil
+#+OPTIONS: H:9 num:nil @:t toc:t _:nil ^:nil \n:t
 #+HTML_MATHJAX: align: left
 #+HTML_MATHJAX: cancel.js noErrors.js
 #+HTML_HEAD_EXTRA: <style> .figure p {text-align: left;}</style>
