@@ -21,7 +21,7 @@
 
 
 #+LATEX_CLASS: article
-#+LATEX_CLASS_OPTIONS: [letterpaper, 11pt, fleqn]
+#+LATEX_CLASS_OPTIONS: [letterpaper, 10pt, fleqn]
 #+LATEX_HEADER: \usepackage{amsmath,amssymb,amsthm,mathrsfs,textcomp,mathtools}
 #+LATEX_HEADER: \usepackage{titlesec}
 #+LATEX_HEADER: \usepackage[dvipsnames]{xcolor}
