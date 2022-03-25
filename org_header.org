@@ -33,7 +33,7 @@
 # #+LATEX_HEADER: \svgsetup{clean=true}
 #+LATEX_HEADER: \hypersetup{hidelinks}
 #+LATEX_HEADER: \renewcommand{\familydefault}{\sfdefault}
-#+LATEX_HEADER: \linespread{1.2}
+# #+LATEX_HEADER: \linespread{1}
 #+LATEX_HEADER: \usepackage{geometry}
 #+LATEX_HEADER: \geometry{left=25mm,right=25mm, bindingoffset=0mm, top=20mm,bottom=20mm}
 #+LATEX: \setlength\parindent{0pt}
@@ -48,6 +48,11 @@
 # #+LATEX_HEADER: \setlist[longenum,4]{label=(\roman*)}
 # #+LATEX_HEADER: \setlist[longenum,5]{label=(\alph*)}
 #+LATEX_HEADER: \setlistdepth{9}
+#+LATEX_HEADER: \setlist[itemize]{itemsep=0cm, parsep=0cm, partopsep=0cm, topsep=0cm}
+#+LATEX_HEADER: \setlist[enumerate]{itemsep=0cm, parsep=0cm, partopsep=0cm, topsep=0cm}
+# #+LATEX_HEADER: \setlist[itemize]{noitemsep}
+# #+LATEX_HEADER: \setlist[enumerate]{itemsep=0pt}
+# #+LATEX_HEADER: \setlist[itemize]{nosep}
 # # #+LATEX_HEADER: \setlist[itemize,1]{label=\tiny$\blacksquare$}
 #+LATEX_HEADER: \setlist{leftmargin=*}
 # #+LATEX_HEADER: \setlist{labelindent=\parindent}
