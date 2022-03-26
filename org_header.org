@@ -32,6 +32,8 @@
 # #+LATEX_HEADER: \usepackage[off]{svg-extract}
 # #+LATEX_HEADER: \svgsetup{clean=true}
 #+LATEX_HEADER: \hypersetup{hidelinks}
+#+LATEX_HEADER: \usepackage{helvet}
+# #+LATEX_HEADER: \usepackage[scaled]{beramono}
 #+LATEX_HEADER: \renewcommand{\familydefault}{\sfdefault}
 # #+LATEX_HEADER: \linespread{1}
 #+LATEX_HEADER: \usepackage{geometry}
