@@ -19,6 +19,12 @@
           "]]")
 #+end_src
 
+#+begin_src latex-macros
+  \newcommand{\vect}[1]{\boldsymbol{#1}}
+  \newcommand{\norm}[1]{\left\lVert\vect{#1}\right\rVert}
+  \newcommand{\normtwo}[1]{\left\lVert\vect{#1}\right\rVert^2}
+  \newcommand{\abs}[1]{\left|#1\right|}
+#+end_src
 
 #+LATEX_CLASS: article
 #+LATEX_CLASS_OPTIONS: [letterpaper, 10pt, fleqn]
