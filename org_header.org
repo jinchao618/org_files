@@ -39,10 +39,15 @@
 # #+LATEX_HEADER: \usepackage[off]{svg-extract}
 # #+LATEX_HEADER: \svgsetup{clean=true}
 #+LATEX_HEADER: \hypersetup{hidelinks}
-# #+LATEX_HEADER: \usepackage{helvet}
+
+# set PDF output font
+#+LATEX_HEADER: \usepackage{helvet}
+# #+LATEX_HEADER: \usepackage{lmodern}
+# #+LATEX_HEADER: \usepackage{fouriernc}
 # #+LATEX_HEADER: \usepackage[scaled]{beramono}
 #+LATEX_HEADER: \renewcommand{\familydefault}{\sfdefault}
 #+LATEX_HEADER: \linespread{1.2}
+
 #+LATEX_HEADER: \usepackage{geometry}
 #+LATEX_HEADER: \geometry{left=25mm,right=25mm, bindingoffset=0mm, top=20mm,bottom=20mm}
 #+LATEX: \setlength\parindent{0pt}
