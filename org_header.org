@@ -46,7 +46,7 @@
 # #+LATEX_HEADER: \usepackage{fouriernc}
 # #+LATEX_HEADER: \usepackage[scaled]{beramono}
 #+LATEX_HEADER: \renewcommand{\familydefault}{\sfdefault}
-#+LATEX_HEADER: \linespread{1.2}
+#+LATEX_HEADER: \linespread{1}
 
 #+LATEX_HEADER: \usepackage{geometry}
 #+LATEX_HEADER: \geometry{left=25mm,right=25mm, bindingoffset=0mm, top=20mm,bottom=20mm}
