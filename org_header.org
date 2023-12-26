@@ -19,15 +19,8 @@
           "]]")
 #+end_src
 
-#+begin_src latex-macros
-  \newcommand{\vect}[1]{\boldsymbol{#1}}
-  \newcommand{\norm}[1]{\left\lVert\vect{#1}\right\rVert}
-  \newcommand{\normtwo}[1]{\left\lVert\vect{#1}\right\rVert^2}
-  \newcommand{\abs}[1]{\left|#1\right|}
-#+end_src
-
 #+LATEX_CLASS: article
-#+LATEX_CLASS_OPTIONS: [letterpaper, 10pt, fleqn]
+#+LATEX_CLASS_OPTIONS: [letterpaper, 11pt, fleqn]
 #+LATEX_HEADER: \usepackage{amsmath,amssymb,amsthm,mathrsfs,textcomp,mathtools}
 #+LATEX_HEADER: \usepackage{titlesec}
 #+LATEX_HEADER: \usepackage[dvipsnames]{xcolor}
@@ -39,6 +32,18 @@
 # #+LATEX_HEADER: \usepackage[off]{svg-extract}
 # #+LATEX_HEADER: \svgsetup{clean=true}
 #+LATEX_HEADER: \hypersetup{hidelinks}
+
+#+begin_src latex-macros
+  \newcommand{\vect}[1]{\boldsymbol{#1}}
+  \newcommand{\norm}[1]{\left\lVert\vect{#1}\right\rVert}
+  \newcommand{\normtwo}[1]{\left\lVert\vect{#1}\right\rVert^2}
+  \newcommand{\abs}[1]{\left|#1\right|}
+#+end_src
+
+#+LATEX_HEADER: \newtheorem*{solution}{Solution}
+#+LATEX_HEADER: \newtheorem*{claim}{Claim}
+#+LATEX_HEADER: \newtheorem{theorem}{Theorem}[section]
+#+LATEX_HEADER: \newtheorem{problem}{Problem}[section]
 
 # set PDF output font
 #+LATEX_HEADER: \usepackage{helvet}

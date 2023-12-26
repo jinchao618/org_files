@@ -3308,6 +3308,7 @@ kbd {
     /* color:#fcfcfc; */
     color:black;
     font-size: 100%;
+    counter-reset: h2counter;
     margin-bottom:0.809em}
 
 .tag {
@@ -3678,6 +3679,75 @@ p.verse {
 
 .creator {
     display: block;
+}
+
+/* if remove below h1 counter reset, h2counter doesn't increase */
+h1 {
+    counter-reset: h2counter;
+}
+
+h2 {
+    counter-reset: h3counter;
+}
+
+h2:before {
+    /* muct call content otherwise h2counter doesn't increase */
+    content: "";
+    counter-increment: h2counter;
+}
+
+.theorem {
+    display: block;
+    font-style: italic;
+    counter-increment: theoremcount;
+}
+.theorem:before {
+    content: "Theorem " counter(h2counter)"."counter(theoremcount);
+    font-weight: bold;
+    font-style: normal;
+}
+.theorem[text]:before {
+    content: "Theorem (" attr(text) ") ";
+}
+
+.problem {
+    display: block;
+    font-style: italic;
+    counter-increment: problemcount;
+}
+.problem:before {
+    content: "Problem " counter(h2counter)"."counter(problemcount);
+    font-weight: bold;
+    font-style: normal;
+}
+.problem[text]:before {
+    content: "Problem (" attr(text) ") ";
+}
+
+.solution {
+    display: block;
+    font-style: italic;
+}
+.solution:before {
+    content: "Solution ";
+    font-weight: bold;
+    font-style: normal;
+}
+.solution[text]:before {
+    content: "Solution (" attr(text) ") ";
+}
+
+.proof {
+    display: block;
+    font-style: italic;
+}
+.proof:before {
+    content: "Proof ";
+    font-weight: bold;
+    font-style: normal;
+}
+.proof[text]:before {
+    content: "Proof (" attr(text) ") ";
 }
 
 @media screen and (min-width: 600px) {
