@@ -3688,6 +3688,8 @@ h1 {
 
 h2 {
     counter-reset: h3counter;
+    counter-reset: problemcounter;
+    counter-reset: theoremmcounter;
 }
 
 h2:before {
@@ -3699,10 +3701,10 @@ h2:before {
 .theorem {
     display: block;
     font-style: italic;
-    counter-increment: theoremcount;
+    counter-increment: theoremcounter;
 }
 .theorem:before {
-    content: "Theorem " counter(h2counter)"."counter(theoremcount);
+    content: "Theorem " counter(h2counter)"."counter(theoremcounter);
     font-weight: bold;
     font-style: normal;
 }
@@ -3713,10 +3715,10 @@ h2:before {
 .problem {
     display: block;
     font-style: italic;
-    counter-increment: problemcount;
+    counter-increment: problemcounter;
 }
 .problem:before {
-    content: "Problem " counter(h2counter)"."counter(problemcount);
+    content: "Problem " counter(h2counter)"."counter(problemcounter);
     font-weight: bold;
     font-style: normal;
 }
