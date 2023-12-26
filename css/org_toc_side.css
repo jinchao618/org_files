@@ -3689,14 +3689,25 @@ h1 {
 h2 {
     counter-reset: h3counter;
     counter-reset: problemcounter;
-    counter-reset: theoremmcounter;
+    /* if add below, problemcounter is mess up? */
+    /* counter-reset: theoremmcounter; */
 }
 
 h2:before {
-    /* muct call content otherwise h2counter doesn't increase */
+    /* must call content otherwise h2counter doesn't increase */
     content: "";
     counter-increment: h2counter;
 }
+
+/* h3 { */
+/*     counter-increment: problemcounter; */
+/* } */
+
+/* h3:before { */
+/*     /\* must call content otherwise problemcounter doesn't increase *\/ */
+/*     content: ""; */
+/*     counter-increment: problemcounter; */
+/* } */
 
 .theorem {
     display: block;
