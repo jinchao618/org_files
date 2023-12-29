@@ -44,6 +44,7 @@
 #+LATEX_HEADER: \newtheorem*{claim}{Claim}
 #+LATEX_HEADER: \newtheorem{theorem}{Theorem}[section]
 #+LATEX_HEADER: \newtheorem{problem}{Problem}[section]
+#+LATEX_HEADER: \newtheorem{exam}{Example}[section]
 
 # set PDF output font
 #+LATEX_HEADER: \usepackage{helvet}

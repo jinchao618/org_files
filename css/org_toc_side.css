@@ -3688,9 +3688,7 @@ h1 {
 
 h2 {
     counter-reset: h3counter;
-    counter-reset: problemcounter;
-    /* if add below, problemcounter is mess up? */
-    /* counter-reset: theoremmcounter; */
+    counter-reset: problemcounter theoremcounter examcounter;
 }
 
 h2:before {
@@ -3735,6 +3733,20 @@ h2:before {
 }
 .problem[text]:before {
     content: "Problem (" attr(text) ") ";
+}
+
+.exam{
+    display: block;
+    font-style: italic;
+    counter-increment: examcounter;
+}
+.exam:before {
+    content: "Example " counter(h2counter)"."counter(examcounter);
+    font-weight: bold;
+    font-style: normal;
+}
+.exam[text]:before {
+    content: "Example (" attr(text) ") ";
 }
 
 .solution {
