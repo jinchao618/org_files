@@ -38,6 +38,7 @@
   \newcommand{\norm}[1]{\left\lVert\vect{#1}\right\rVert}
   \newcommand{\normtwo}[1]{\left\lVert\vect{#1}\right\rVert^2}
   \newcommand{\abs}[1]{\left|#1\right|}
+  \newcommand{\abstwo}[1]{\left|#1\right|^2}
 #+end_src
 
 #+LATEX_HEADER: \newtheorem*{solution}{Solution}
