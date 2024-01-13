@@ -3,7 +3,8 @@
 #+NAME: prj-header-run
 #+begin_src emacs-lisp :var filename="default" :exports none :results raw
   (setq filepath (f-dirname filename))
-  (concat "#+HTML_HEAD: <link rel=\"stylesheet\" type=\"text/css\" href=\"" filepath "css/org_toc_side.css\" />")
+  (setq out-text (concat "#+HTML_HEAD: <link rel=\"stylesheet\" type=\"text/css\" href=\"" filepath "css/org_toc_side.css\" />\n"))
+  (concat out-text "#+INFOJS_OPT: path:" filepath "js/org-info.js view:showall ltoc:nil")
 
   ;; use local MathJax
   ;; (concat "#+HTML_HEAD: <link rel=\"stylesheet\" type=\"text/css\" href=\"" filepath "css/org_toc_side.css\" />"
