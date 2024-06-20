@@ -3,12 +3,13 @@
 #+NAME: prj-header-run
 #+begin_src emacs-lisp :var filename="default" :exports none :results raw
   (setq filepath (f-dirname filename))
-  (setq out-text (concat "#+HTML_HEAD: <link rel=\"stylesheet\" type=\"text/css\" href=\"" filepath "css/org_toc_side.css\" />\n"))
+  ;; (setq out-text (concat "#+HTML_HEAD: <link rel=\"stylesheet\" type=\"text/css\" href=\"" filepath "css/org_toc_side.css\" />\n"))
+  ;; use local MathJax
+  (setq out-text (concat "#+HTML_HEAD: <link rel=\"stylesheet\" type=\"text/css\" href=\"" filepath "css/org_toc_side.css\" />\n" "#+HTML_MATHJAX: path:" filepath "mathjax_3/tex-mml-chtml.js\n"))
+  ;; below with separate concat doesn't work why?
+  ;; (concat out-text "#+HTML_MATHJAX: path:" filepath "mathjax_3/tex-mml-chtml.js\n")
   (concat out-text "#+INFOJS_OPT: path:" filepath "js/org-info.js view:showall ltoc:nil")
 
-  ;; use local MathJax
-  ;; (concat "#+HTML_HEAD: <link rel=\"stylesheet\" type=\"text/css\" href=\"" filepath "css/org_toc_side.css\" />"
-  ;;         "\n" "#+HTML_MATHJAX: path:\"" filepath "MathJax-master/es5/tex-mml-chtml.js\"")
 #+end_src
 
 #+OPTIONS: num:9
