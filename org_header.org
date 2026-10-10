@@ -61,6 +61,10 @@
   \newcommand{\normtwo}[1]{\left\lVert\vect{#1}\right\rVert^2}
   \newcommand{\abs}[1]{\left|#1\right|}
   \newcommand{\abstwo}[1]{\left|#1\right|^2}
+  \newcommand{\argmin}{\operatorname*{arg\,min}}
+  \newcommand{\argmax}{\operatorname*{arg\,max}}
+  \newcommand{\diag}{\operatorname{diag}}
+  \newcommand{\round}{\operatorname{round}}
 #+end_src
 
 #+LATEX_HEADER: \newtheorem*{solution}{Solution}
