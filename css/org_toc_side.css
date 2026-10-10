@@ -2839,10 +2839,40 @@ body {
     height:100%;
     margin-left:300px;
     /* margin:auto; */
-    max-width:900px;
+    max-width:1400px;  /* outer cap: tables and figures may fill up to here */
     min-height:100%;
     /* padding:1.618em 3.236em; */
     padding:1.618em;
+}
+
+/* Limit width on text only; tables and figures are free to expand.
+   margin-right:auto overrides the existing `margin: ... auto` rules
+   so the text column stays left-aligned instead of centering. */
+#content p,
+#content ul,
+#content ol,
+#content dl,
+#content blockquote,
+#content pre,
+#content h1,
+#content h2,
+#content h3,
+#content h4,
+#content h5,
+#content h6 {
+    max-width: 900px;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+/* Don't shrink text that lives inside a table cell or figure caption */
+#content table p,
+#content table ul,
+#content table ol,
+#content .figure p,
+#content figure p,
+#content figure figcaption {
+    max-width: none;
 }
 
 @media screen and (min-width: 600px) {
