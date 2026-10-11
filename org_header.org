@@ -2,6 +2,8 @@
 #+HTML_MATHJAX: align: left
 #+HTML_MATHJAX: cancel.js noErrors.js
 #+HTML_HEAD_EXTRA: <style> .figure p {text-align: left;}</style>
+#+HTML_HEAD_EXTRA: <style>.toc-fold-btn{cursor:pointer;display:inline-block;width:1.2em;text-align:center;font-size:.7em;color:#999;user-select:none;-webkit-user-select:none;vertical-align:middle}</style>
+#+HTML_HEAD_EXTRA: <script>(function(){function initTocFold(){var t=document.getElementById('text-table-of-contents');if(!t)return;t.querySelectorAll('li').forEach(function(li){var ul=li.querySelector(':scope>ul');if(!ul)return;ul.style.display='none';var a=li.querySelector(':scope>a');if(!a)return;var btn=document.createElement('span');btn.className='toc-fold-btn';btn.textContent='▶';a.insertBefore(btn,a.firstChild);btn.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();var open=ul.style.display!=='none';ul.style.display=open?'none':'block';btn.textContent=open?'▶':'▼';});});new MutationObserver(function(){var cur=t.querySelector('li.current');if(!cur)return;var el=cur.parentElement;while(el&&el!==t){if(el.tagName==='UL')el.style.display='block';if(el.tagName==='LI'){var b=el.querySelector(':scope>a>.toc-fold-btn');if(b)b.textContent='▼';}el=el.parentElement;}}).observe(t,{subtree:true,attributes:true,attributeFilter:['class']});}window.addEventListener('load',function(){setTimeout(initTocFold,700);});})();</script>
 #+MACRO: color @@html:<span style="color: $1">$2</span>@@@@latex:\textcolor{$1}{$2}@@@@odt:<text:span text:style-name=“$1”>$2</text:span>@@
 #+MACRO: bgcolor @@html:<span style="background-color: $1;">$2</span>@@@@latex:\sethlcolor{$1}\hl{$2}@@
 #+MACRO: if-latex-else (eval (if (org-export-derived-backend-p org-export-current-backend 'latex) "$1" "$2"))
