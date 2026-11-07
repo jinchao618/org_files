@@ -2875,18 +2875,27 @@ body {
     max-width: none;
 }
 
-/* Let figures/tables that are nested UNDER a list item still expand to full
-   width. The 900px text cap above also applies to #content ul/ol, so a figure
-   inside a <li> would be clamped to the text column. :has() frees the list
-   ancestors (and the item) that contain a figure or table.
-   Note: this also widens the text of the list that holds the figure. */
-#content li:has(.figure),
-#content ul:has(.figure),
-#content ol:has(.figure),
-#content li:has(table),
-#content ul:has(table),
-#content ol:has(table) {
+/* A figure/table nested UNDER a list item should fill the content width while
+   the list's TEXT stays capped (the #content ul/ol 900px cap above keeps text
+   narrow). Instead of un-capping the list (which would widen its text), we let
+   just the figure break OUT of the list column:
+   list items indent 24px/level (li{margin-left:24px}); #content margin-left is
+   300px (TOC) + 1.618em padding, so the content area is ~calc(95vw - 352px).
+   The img inside keeps its own #+attr_html :width (percent of this box). */
+#content li .figure,
+#content li figure {
+    width: calc(95vw - 352px);
     max-width: none;
+    margin-left: -24px;   /* undo one list level so the figure aligns with the content's left edge */
+}
+#content li table {
+    max-width: none;
+    margin-left: -24px;
+}
+@media screen and (max-width: 768px) {
+    /* TOC collapses (#content margin-left:0), so the content area is wider */
+    #content li .figure,
+    #content li figure { width: calc(100vw - 72px); margin-left: -24px; }
 }
 
 @media screen and (min-width: 600px) {
