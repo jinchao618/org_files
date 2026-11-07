@@ -2839,7 +2839,7 @@ body {
     height:100%;
     margin-left:300px;
     /* margin:auto; */
-    max-width:1400px;  /* outer cap: tables and figures may fill up to here */
+    max-width: none !important;  /* no outer frame: tables and figures fill the window; text is capped to 900px separately below. !important beats org's default #content{max-width:60em}. */
     min-height:100%;
     /* padding:1.618em 3.236em; */
     padding:1.618em;
@@ -2872,6 +2872,20 @@ body {
 #content .figure p,
 #content figure p,
 #content figure figcaption {
+    max-width: none;
+}
+
+/* Let figures/tables that are nested UNDER a list item still expand to full
+   width. The 900px text cap above also applies to #content ul/ol, so a figure
+   inside a <li> would be clamped to the text column. :has() frees the list
+   ancestors (and the item) that contain a figure or table.
+   Note: this also widens the text of the list that holds the figure. */
+#content li:has(.figure),
+#content ul:has(.figure),
+#content ol:has(.figure),
+#content li:has(table),
+#content ul:has(table),
+#content ol:has(table) {
     max-width: none;
 }
 
